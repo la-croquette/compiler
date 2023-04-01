@@ -1,9 +1,9 @@
-# dune build
+# dune utop
 # OCAMLPARAM: unset
 # Shared cache: disabled
-# Workspace root: /Users/boypromising/Desktop/LALOG/compiler_Lais_Ning
+# Workspace root: /Users/boypromising/Desktop/LALOG/compilation-0321
 # Auto-detected concurrency: 8
-$ /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -config > /var/folders/gt/_mctt32n0v965hs66w50hk5h0000gn/T/dune_ffec1d_output
+$ /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -config > /var/folders/gt/_mctt32n0v965hs66w50hk5h0000gn/T/dune_faf41b_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -26,15 +26,15 @@ $ /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -config > /var/folders/gt/_mct
 #        { "DUNE_OCAML_HARDCODED" : "/Users/boypromising/.opam/4.14.1/lib"
 #        ; "DUNE_OCAML_STDLIB" : "/Users/boypromising/.opam/4.14.1/lib/ocaml"
 #        ; "DUNE_SOURCEROOT" :
-#            "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning"
+#            "/Users/boypromising/Desktop/LALOG/compilation-0321"
 #        ; "INSIDE_DUNE" :
-#            "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/default"
+#            "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/default"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/install/default/lib"
+#            "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/install/default/lib"
+#            "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/install/default/lib/toplevel"
+#            "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
@@ -113,20 +113,4 @@ $ /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -config > /var/folders/gt/_mct
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /Users/boypromising/.opam/4.14.1/bin/ocamldep.opt -modules -impl pfx/basic/eval.ml) > _build/default/pfx/basic/.basicPfx.objs/eval.ml.d
-$ (cd _build/default && /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I pfx/basic/.basicPfx.objs/byte -I utils/.utils.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open BasicPfx -o pfx/basic/.basicPfx.objs/byte/basicPfx__Eval.cmo -c -impl pfx/basic/eval.ml)
-> File "pfx/basic/eval.ml", line 42, characters 20-25:
-> 42 |          match step state with
->                          ^^^^^
-> Error: This expression has type command list * int list
->        but an expression was expected of type command list * command list
->        Type int is not compatible with type command 
-[2]
-$ (cd _build/default && /Users/boypromising/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I pfx/basic/.basicPfx.objs/byte -I pfx/basic/.basicPfx.objs/native -I utils/.utils.objs/byte -I utils/.utils.objs/native -intf-suffix .ml -no-alias-deps -opaque -open BasicPfx -o pfx/basic/.basicPfx.objs/native/basicPfx__Eval.cmx -c -impl pfx/basic/eval.ml)
-> File "pfx/basic/eval.ml", line 42, characters 20-25:
-> 42 |          match step state with
->                          ^^^^^
-> Error: This expression has type command list * int list
->        but an expression was expected of type command list * command list
->        Type int is not compatible with type command 
-[2]
+$ (cd _build/default && /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o .utop/utop.exe -output-complete-exe /Users/boypromising/.opam/4.14.1/lib/ocaml/compiler-libs/ocamlcommon.cma /Users/boypromising/.opam/4.14.1/lib/ocaml/compiler-libs/ocamlbytecomp.cma /Users/boypromising/.opam/4.14.1/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/boypromising/.opam/4.14.1/lib/findlib/findlib.cma /Users/boypromising/.opam/4.14.1/lib/findlib/findlib_top.cma /Users/boypromising/.opam/4.14.1/lib/logs/logs.cma -I /Users/boypromising/.opam/4.14.1/lib/ocaml /Users/boypromising/.opam/4.14.1/lib/lwt/lwt.cma /Users/boypromising/.opam/4.14.1/lib/logs/logs_lwt.cma /Users/boypromising/.opam/4.14.1/lib/ocaml/unix.cma -I /Users/boypromising/.opam/4.14.1/lib/ocaml /Users/boypromising/.opam/4.14.1/lib/ocaml/bigarray.cma -I /Users/boypromising/.opam/4.14.1/lib/ocaml /Users/boypromising/.opam/4.14.1/lib/ocplib-endian/ocplib_endian.cma /Users/boypromising/.opam/4.14.1/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /Users/boypromising/.opam/4.14.1/lib/ocaml/threads/threads.cma -I /Users/boypromising/.opam/4.14.1/lib/ocaml /Users/boypromising/.opam/4.14.1/lib/lwt/unix/lwt_unix.cma -I /Users/boypromising/.opam/4.14.1/lib/lwt/unix /Users/boypromising/.opam/4.14.1/lib/react/react.cma /Users/boypromising/.opam/4.14.1/lib/lwt_react/lwt_react.cma /Users/boypromising/.opam/4.14.1/lib/result/result.cma /Users/boypromising/.opam/4.14.1/lib/uutf/uutf.cma /Users/boypromising/.opam/4.14.1/lib/uucp/uucp.cma /Users/boypromising/.opam/4.14.1/lib/uuseg/uuseg.cma /Users/boypromising/.opam/4.14.1/lib/zed/zed.cma /Users/boypromising/.opam/4.14.1/lib/trie/trie.cma /Users/boypromising/.opam/4.14.1/lib/mew/mew.cma /Users/boypromising/.opam/4.14.1/lib/mew_vi/mew_vi.cma /Users/boypromising/.opam/4.14.1/lib/lambda-term/lambda_term.cma -I /Users/boypromising/.opam/4.14.1/lib/lambda-term /Users/boypromising/.opam/4.14.1/lib/utop/uTop.cma utils/utils.cma expr/common/common.cma pfx/basic/basicPfx.cma expr/basic/basicExpr.cma .utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
