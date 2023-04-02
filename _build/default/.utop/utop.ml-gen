@@ -20,9 +20,9 @@ Clflags.include_dirs :=
   ; "/Users/boypromising/.opam/4.14.1/lib/uuseg"
   ; "/Users/boypromising/.opam/4.14.1/lib/uutf"
   ; "/Users/boypromising/.opam/4.14.1/lib/zed"
-  ; "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/default/expr/basic/.basicExpr.objs/byte"
-  ; "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/default/expr/common/.common.objs/byte"
-  ; "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/default/pfx/basic/.basicPfx.objs/byte"
-  ; "/Users/boypromising/Desktop/LALOG/compilation-0321/_build/default/utils/.utils.objs/byte"
+  ; "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/default/expr/basic/.basicExpr.objs/byte"
+  ; "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/default/expr/common/.common.objs/byte"
+  ; "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/default/pfx/basic/.basicPfx.objs/byte"
+  ; "/Users/boypromising/Desktop/LALOG/compiler_Lais_Ning/_build/default/utils/.utils.objs/byte"
   ];
 UTop_main.main ();
