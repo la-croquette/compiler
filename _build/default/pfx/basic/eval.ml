@@ -14,13 +14,14 @@ let step (state : command list * int list) =
   match state with
   | [], _ -> Error("Nothing to step",state)
   (* Valid configurations *)
+  (* "Push" is for adding one element to the stack *)
   | Push :: Num i::q , stack          -> Ok (q, i::stack)
   | Push :: _, _                       -> Error("Lack arguments",state)
   | _ :: _ , []          -> Error("Empty stack",state)
   | Num _::_, _::_ -> Error("Lack commond instruction", state)
- 
+  (* "Pop" is for deleting one element in the stack  *)
   | Pop :: q , _::stack          -> Ok (q, stack)
-
+  (* "Swap" is for changing the order of the first two elements in the stack *)
   | Swap :: q , v1::v2::stack          -> Ok (q, v2::v1::stack)
   | (Swap | Add | Mul | Div | Rem | Sub) :: _ , _::[]         -> Error("Not enought elements in stack",state)
 

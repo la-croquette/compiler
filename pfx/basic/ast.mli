@@ -1,4 +1,5 @@
-(* The type of the commands for the stack machine *)
+(* The type of the commands for the stack machine ,
+Ce sont les noms que j'ai défini pour les command*)
 type command =
 |Push 
 |Pop
