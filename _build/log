@@ -1,9 +1,9 @@
-# dune exec expr/main.exe -- expr/basic/tests/an_example.expr
+# dune utop
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /Users/boypromising/Desktop/LALOG/compiler_Lais_Ning
 # Auto-detected concurrency: 8
-$ /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -config > /var/folders/gt/_mctt32n0v965hs66w50hk5h0000gn/T/dune_9c7c97_output
+$ /Users/boypromising/.opam/4.14.1/bin/ocamlc.opt -config > /var/folders/gt/_mctt32n0v965hs66w50hk5h0000gn/T/dune_5a0883_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"

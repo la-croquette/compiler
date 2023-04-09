@@ -71,7 +71,7 @@ project
 │   │   ├── parser.mly
 │   │   ├── tests: for tests
 │   │   │   └── an_example.expr
-│   │   ├── toPfx.ml             <- To edit
+│   │   ├── toPfx.ml             <- For the Ex5, We have worked here, to define the function "generate" ?
 │   │   └── toPfx.mli
 │   ├── common
 │   │   ├── binOp.ml
@@ -87,10 +87,10 @@ project
 │   └── main.ml
 ├── pfx: the pfx VM
 │   ├── basic
-│   │   ├── ast.ml               <- To edit
+│   │   ├── ast.ml               <- For the Ex4
 │   │   ├── ast.mli
 │   │   ├── dune
-│   │   ├── eval.ml              <- To edit
+│   │   ├── eval.ml              <- For the Ex4
 │   │   ├── eval.mli
 │   │   ├── lexer.mll            <- To edit
 │   │   ├── parser.mly           <- To edit
