@@ -114,9 +114,16 @@ project
 Progress
 --------
 
+
 - We stopped at question 10.1 (proof of derivation)
 - There is still a bug in question 7, with the codes I write, No results given, so I have treated is as commentary.
-- …
+
+- Our progress was a little limited according to our capabilities in the subject, so we couldn't finish everything it was proposed to us.
+- We stopped at question 9. We did the theorical part, but we didn't have the time to implement it successfully on the code.
+
+
+===============
+
 
 ===============
 
@@ -132,11 +139,10 @@ Helpful resources
 Difficulties
 ------------
 
+
 - We can not understand very the Sujet in Englsih, so we spending a lot of time in researching in the official site of Ocaml.
 - Difficulties in communication, NING is chinese, Lais comes from Brazil, we can not speak excenllent French. 
 So we seperate the work with Math for Lais and Coding for NING. But sure, we often exchange progress, results, and complement each other's parts.
 - changing habits by using an unknown language
 - the Ocaml language is so nice we enjoyed the project, we love it, we understand better how a compiler work, 
 it will help us coding with Java/Matalab in the future. 
-
-
