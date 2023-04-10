@@ -44,10 +44,12 @@ How to…
   (from project root) 
   dune build
   dune exec expr/main.exe -- expr/basic/tests/an_example.expr
+
   For the Ex5, We need to test it like :
   (from project root) 
   dune build
   dune exec ./expr/compiler.exe -- ./expr/basic/tests/an_example.expr
+  
   For the Ex6 et Ex8, We need to test it like :
   (from project root) 
   dune exec ./pfx/pfxVM.exe  -- pfx/basic/tests/ok_prog.pfx
