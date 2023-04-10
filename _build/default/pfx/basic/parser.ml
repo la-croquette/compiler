@@ -10,19 +10,15 @@ module MenhirBasics = struct
   type token = 
     | SWAP
     | SUB
-    | RPAR
     | REM
     | PUSH
     | POP
     | MUL
-    | LPAR
     | INT of (
 # 13 "pfx/basic/parser.mly"
        (int)
-# 23 "pfx/basic/parser.ml"
+# 21 "pfx/basic/parser.ml"
   )
-    | GET
-    | EXEC
     | EOF
     | DIV
     | ADD
@@ -36,7 +32,7 @@ include MenhirBasics
   (* Ocaml code here*)
   open Ast
 
-# 40 "pfx/basic/parser.ml"
+# 36 "pfx/basic/parser.ml"
 
 type ('s, 'r) _menhir_state = 
   | MenhirState01 : ('s _menhir_cell0_INT, _menhir_box_program) _menhir_state
@@ -95,7 +91,7 @@ and 's _menhir_cell0_INT =
   | MenhirCell0_INT of 's * (
 # 13 "pfx/basic/parser.mly"
        (int)
-# 99 "pfx/basic/parser.ml"
+# 95 "pfx/basic/parser.ml"
 )
 
 and ('s, 'r) _menhir_cell1_MUL = 
@@ -122,129 +118,129 @@ and _menhir_box_program =
 let _menhir_action_01 =
   fun e i ->
     (
-# 36 "pfx/basic/parser.mly"
+# 37 "pfx/basic/parser.mly"
                         (Push::Num i::e)
-# 128 "pfx/basic/parser.ml"
+# 124 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_02 =
   fun e ->
     (
-# 37 "pfx/basic/parser.mly"
+# 38 "pfx/basic/parser.mly"
                   (Pop::e )
-# 136 "pfx/basic/parser.ml"
+# 132 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_03 =
   fun e ->
     (
-# 38 "pfx/basic/parser.mly"
+# 39 "pfx/basic/parser.mly"
                   (Swap::e)
-# 144 "pfx/basic/parser.ml"
+# 140 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_04 =
   fun e ->
     (
-# 39 "pfx/basic/parser.mly"
+# 40 "pfx/basic/parser.mly"
                   (Add::e )
-# 152 "pfx/basic/parser.ml"
+# 148 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_05 =
   fun e ->
     (
-# 40 "pfx/basic/parser.mly"
+# 41 "pfx/basic/parser.mly"
                   (Div::e )
-# 160 "pfx/basic/parser.ml"
+# 156 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_06 =
   fun e ->
     (
-# 41 "pfx/basic/parser.mly"
+# 42 "pfx/basic/parser.mly"
                   (Mul::e )
-# 168 "pfx/basic/parser.ml"
+# 164 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_07 =
   fun e ->
     (
-# 42 "pfx/basic/parser.mly"
+# 43 "pfx/basic/parser.mly"
                   (Rem::e )
-# 176 "pfx/basic/parser.ml"
+# 172 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_08 =
   fun e ->
     (
-# 43 "pfx/basic/parser.mly"
+# 44 "pfx/basic/parser.mly"
                   (Sub::e )
-# 184 "pfx/basic/parser.ml"
+# 180 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_09 =
   fun i ->
     (
-# 46 "pfx/basic/parser.mly"
+# 47 "pfx/basic/parser.mly"
                (Push::Num i::[])
-# 192 "pfx/basic/parser.ml"
+# 188 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_10 =
   fun () ->
     (
-# 47 "pfx/basic/parser.mly"
+# 48 "pfx/basic/parser.mly"
          (Pop::[] )
-# 200 "pfx/basic/parser.ml"
+# 196 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_11 =
   fun () ->
     (
-# 48 "pfx/basic/parser.mly"
+# 49 "pfx/basic/parser.mly"
          (Swap::[])
-# 208 "pfx/basic/parser.ml"
+# 204 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_12 =
   fun () ->
     (
-# 49 "pfx/basic/parser.mly"
+# 50 "pfx/basic/parser.mly"
          (Add::[] )
-# 216 "pfx/basic/parser.ml"
+# 212 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_13 =
   fun () ->
     (
-# 50 "pfx/basic/parser.mly"
+# 51 "pfx/basic/parser.mly"
          (Div::[] )
-# 224 "pfx/basic/parser.ml"
+# 220 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_14 =
   fun () ->
     (
-# 51 "pfx/basic/parser.mly"
+# 52 "pfx/basic/parser.mly"
          (Mul::[] )
-# 232 "pfx/basic/parser.ml"
+# 228 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_15 =
   fun () ->
     (
-# 52 "pfx/basic/parser.mly"
+# 53 "pfx/basic/parser.mly"
          (Rem::[] )
-# 240 "pfx/basic/parser.ml"
+# 236 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_16 =
   fun () ->
     (
-# 53 "pfx/basic/parser.mly"
+# 54 "pfx/basic/parser.mly"
          (Sub::[] )
-# 248 "pfx/basic/parser.ml"
+# 244 "pfx/basic/parser.ml"
      : (Ast.command list))
 
 let _menhir_action_17 =
@@ -252,7 +248,7 @@ let _menhir_action_17 =
     (
 # 33 "pfx/basic/parser.mly"
                       ( i, e )
-# 256 "pfx/basic/parser.ml"
+# 252 "pfx/basic/parser.ml"
      : (Ast.program))
 
 let _menhir_print_token : token -> string =
@@ -264,14 +260,8 @@ let _menhir_print_token : token -> string =
         "DIV"
     | EOF ->
         "EOF"
-    | EXEC ->
-        "EXEC"
-    | GET ->
-        "GET"
     | INT _ ->
         "INT"
-    | LPAR ->
-        "LPAR"
     | MUL ->
         "MUL"
     | POP ->
@@ -280,8 +270,6 @@ let _menhir_print_token : token -> string =
         "PUSH"
     | REM ->
         "REM"
-    | RPAR ->
-        "RPAR"
     | SUB ->
         "SUB"
     | SWAP ->
@@ -705,6 +693,6 @@ let program =
     let MenhirBox_program v = _menhir_run_00 _menhir_stack _menhir_lexbuf _menhir_lexer in
     v
 
-# 59 "pfx/basic/parser.mly"
+# 58 "pfx/basic/parser.mly"
     
-# 711 "pfx/basic/parser.ml"
+# 699 "pfx/basic/parser.ml"

@@ -4,15 +4,11 @@
 type token = 
   | SWAP
   | SUB
-  | RPAR
   | REM
   | PUSH
   | POP
   | MUL
-  | LPAR
   | INT of (int)
-  | GET
-  | EXEC
   | EOF
   | DIV
   | ADD

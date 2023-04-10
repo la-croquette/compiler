@@ -35,8 +35,6 @@ rule token = parse
   | "pop"    {POP}
   | "swap"   {SWAP}
   | "mul"    {MUL}
-
-  
   (* illegal characters
   (* Exercise 7  *)
   (* Modify  code from the previous exercise to be able to return the location of errors. *)

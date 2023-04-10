@@ -62,7 +62,6 @@ The project is organized as following:
 
 Explain here the organization of your project, what is the use of each file or
 group of files, etc.
-
 You may also show the file tree as the following example:
 
 project
@@ -101,8 +100,8 @@ project
 │   │   ├── dune
 │   │   ├── eval.ml              <- For the Ex4, to define the function step
 │   │   ├── eval.mli
-│   │   ├── lexer.mll            <- To edit
-│   │   ├── parser.mly           <- To edit
+│   │   ├── lexer.mll            <- For the Ex6, we define a lexer, to translate input Stream to some tokens.
+│   │   ├── parser.mly           <- For the Ex8, we define a parser, to translate tokens to Ast.program
 │   │   └── tests: for tests
 │   │       └── ok_prog.pfx
 │   └── pfxVM.ml: main file for the pfx VM
@@ -116,16 +115,7 @@ Progress
 --------
 
 - We stopped at question 10.1 (proof of derivation)
-- There is still a bug in question 8.3 (new version of generate function)
-- …
-
-===============
-
-Know bugs and issues
---------------------
-
-- We were not able to manage xxx…
-- Compiler fails when xxx…
+- There is still a bug in question 7, with the codes I write, No results given, so I have treated is as commentary.
 - …
 
 ===============
@@ -133,21 +123,20 @@ Know bugs and issues
 Helpful resources
 -----------------
 
-- we used Stack Overflow to solve the problem of xxx :
-  https://stackoverflow/xxxxxxi
-  https://stackoverflow/yyyyyy
-- someone on GitHub provided an interesting example very similar to the answer of the question x.y : https://github.com/xxxx
-- …
-
+- Ocaml Documentation : https://www.ocaml.org/docs
+- Dune Documentation : https://dune.readthedocs.io/en/stable/index.html
+- Errors debugging and documentation : https://stackoverflow.com/ && https://chat.openai.com/chat
+- OCaml - Lexer and parser generators (ocamllex, ocamlyacc) https://ocaml.org/manual/lexyacc.html
 ===============
 
 Difficulties
 ------------
 
-- team programming: having to use a VCS such as git and avoiding conflicts
-- thinking functional
+- We can not understand very the Sujet in Englsih, so we spending a lot of time in researching in the official site of Ocaml.
+- Difficulties in communication, NING is chinese, Lais comes from Brazil, we can not speak excenllent French. 
+So we seperate the work with Math for Lais and Coding for NING. But sure, we often exchange progress, results, and complement each other's parts.
 - changing habits by using an unknown language
-- Not a single difficulty: the project was so easy that my 8-old brother did it
-  completely; the Ocaml language is so nice I enjoyed the project, …
-- …
+- the Ocaml language is so nice we enjoyed the project, we love it, we understand better how a compiler work, 
+it will help us coding with Java/Matalab in the future. 
+
 

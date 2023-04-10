@@ -8,8 +8,8 @@
  **************)
 
 (* enter tokens here, they should begin with %token *)
- (* question 9.3 *)
-%token  EOF PUSH POP SWAP ADD DIV MUL REM SUB EXEC GET LPAR RPAR
+
+%token  EOF PUSH POP SWAP ADD DIV MUL REM SUB 
 %token <int> INT
 
 
@@ -31,7 +31,8 @@
 
 program:
 | i = INT e=expr EOF  { i, e }
-
+(*  EOF("end of file") is used to represent the end of the input stream. 
+    When the parser encounters the end of the input stream, it stops parsing and returns an Ast.program as the output. *)
 expr:
   |PUSH  i=INT e = expr {Push::Num i::e}
   |POP   e = expr {Pop::e }
@@ -53,7 +54,5 @@ expr:
   |SUB   {Sub::[] }
  
   
-simple_expr:
-  |LPAR e=expr RPAR           { e }
 
   %%
