@@ -17,12 +17,7 @@ This μ-project is a very simple compiler…
 Sources
 -------
 
-Git repository: https://redmine-df.telecom-bretagne.eu/git/PROJECTNAME
-
-(obviously, you _will_ use a version control system such as Git, IMT
-Atlantique provides a project management platform: use it!)
-
-Release : tag 1.0 or commit acdeacdacdacdacd
+Git repository: https://github.com/la-croquette/compiler
 
 ===============
 
@@ -31,15 +26,16 @@ How to…
 
 …retrieve the sources?
 
-  git clone https://redmine-df.telecom-bretagne.eu/git/PROJECTNAME
+  git clone https://github.com/la-croquette/compiler
 
 …compile?
 
-  dune …
+  dune build
 
 …execute and test?
 
   dune utop and then use the libraries
+  For the Ex4, We need to use utop et les commande comme
   (from project root) dune exec expr/main.exe -- expr/basic/tests/an_example.expr
   dune exec ./pfxVM.exe -- TESTFILE.pfx -a 12 -a 52
 
@@ -71,7 +67,7 @@ project
 │   │   ├── parser.mly
 │   │   ├── tests: for tests
 │   │   │   └── an_example.expr
-│   │   ├── toPfx.ml             <- For the Ex5, We have worked here, to define the function "generate" ?
+│   │   ├── toPfx.ml             <- For the Ex5, We have worked here, to define the function "generate" .
 │   │   └── toPfx.mli
 │   ├── common
 │   │   ├── binOp.ml
@@ -87,10 +83,10 @@ project
 │   └── main.ml
 ├── pfx: the pfx VM
 │   ├── basic
-│   │   ├── ast.ml               <- For the Ex4
+│   │   ├── ast.ml               <- For the Ex4, to define the type commande
 │   │   ├── ast.mli
 │   │   ├── dune
-│   │   ├── eval.ml              <- For the Ex4
+│   │   ├── eval.ml              <- For the Ex4, to define the function step
 │   │   ├── eval.mli
 │   │   ├── lexer.mll            <- To edit
 │   │   ├── parser.mly           <- To edit
